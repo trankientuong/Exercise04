@@ -12,6 +12,7 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("Hello Github");
 
+
         }
         public static bool isOdd(int n)
         {
