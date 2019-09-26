@@ -9,11 +9,18 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestIsOdd()
         {
-            bool result3 = Program.isOdd(3);
+            bool result3 = Program.isEven(3);
             Assert.AreEqual(true, result3);
-            bool result4 = Program.isOdd(4);
+            bool result4 = Program.isEven(4);
             Assert.AreEqual(false, result4);
 
+        }
+        public void TestIsEven()
+        {
+            bool result3 = Program.isEven(3);
+            Assert.AreEqual(false, result3);
+            bool result4 = Program.isEven(4);
+            Assert.AreEqual(true, result4);
         }
     }
 }
