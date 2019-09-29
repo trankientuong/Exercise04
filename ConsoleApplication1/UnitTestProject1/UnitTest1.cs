@@ -55,5 +55,23 @@ namespace UnitTestProject1
             int result = Program.Abs(4);
             Assert.AreEqual(4, result);
         }
+        [TestMethod]
+        public void TestCeil()
+        {            
+            float result = Program.Ceil((float)3.5);
+            Assert.AreEqual(4, result);
+        }
+        [TestMethod]
+        public void TestFloor()
+        {
+            float result = Program.Floor((float)3.5);
+            Assert.AreEqual(3, result);
+        }
+        [TestMethod]
+        public void TestFactorial()
+        {
+            long result = Program.Factorial(5);
+            Assert.AreEqual(120, result);
+        }
     }
 }

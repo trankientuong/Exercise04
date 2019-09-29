@@ -10,9 +10,14 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Github");
-            Console.WriteLine(isPrime(6));
-
+            //Console.WriteLine("Hello Github");
+            // Console.WriteLine(isPrime(6));
+            // Console.WriteLine(Ceil((float)12.8));
+            // Console.WriteLine(Floor((float)12.5));
+            Console.WriteLine(Rand1());
+            Console.WriteLine(Rand2());
+            Console.WriteLine(Factorial(5));
+            
         }
         public static bool isOdd(int n)
         {
@@ -62,6 +67,36 @@ namespace ConsoleApplication1
             else
                 n = n * (-1);
             return n;
+        }
+        //returns the smallest integral value not less than x.
+        public static int Ceil(float x)
+        {
+            return (int)x+1;
+        }
+       public static int Floor(float x)
+        {           
+            return (int)x;
+        }
+        public static int Rand1()
+        {
+            Random rand = new Random();
+
+            int rd = rand.Next(0, 2147483647);
+            return rd;
+        }
+        public static float Rand2()
+        {
+            Random rand = new Random();
+            var n = rand.NextDouble();
+            return (float)n;
+        }
+        public static long Factorial(long n)
+        {
+            if (n == 1)
+                return n = 1;
+
+            return Factorial(n - 1) * n;
+            
         }
     }
 }
