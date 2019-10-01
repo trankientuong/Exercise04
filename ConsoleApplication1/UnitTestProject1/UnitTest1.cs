@@ -58,14 +58,22 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestCeil()
         {            
-            float result = Program.Ceil((float)3.5);
-            Assert.AreEqual(4, result);
+            int result = Program.Ceil((float)2.3);
+            Assert.AreEqual(3, result);
+            int result1 = Program.Ceil(-2.3f);
+            Assert.AreEqual(-2, result1);
+            int result2 = Program.Ceil(3);
+            Assert.AreEqual(3, result2);
         }
         [TestMethod]
         public void TestFloor()
         {
-            float result = Program.Floor((float)3.5);
+            int result = Program.Floor((float)3.5);
             Assert.AreEqual(3, result);
+            int result1 = Program.Floor(-3.3f);
+            Assert.AreEqual(-4, result1);
+            int result2 = Program.Floor(3);
+            Assert.AreEqual(3, result2);
         }
         [TestMethod]
         public void TestFactorial()
